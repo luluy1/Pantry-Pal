@@ -1,0 +1,109 @@
+.Title {
+    color: #565656;
+}
+
+.Recipe-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.Link {
+    text-decoration: none;
+    color: #565656;
+}
+
+.No-Recipes {
+    color: #565656;
+}
+
+.Recipe-List {
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Recipe-List::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Recipe-List::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+
+.Recipe-List::-webkit-scrollbar-thumb {
+    background-color: #af4a5d;
+    border-radius: 4px;
+}
+
+.Recipe-List::-webkit-scrollbar-thumb:hover {
+    background-color: #76323F;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af4a5d;
+    color: #d7cec7;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    margin-right: 10px; /* Added margin between buttons */
+}
+
+
+.go-to-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af4a5d;
+    color: #d7cec7;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.Search:hover,
+.go-to-input:hover {
+    background-color: #76323f;
+    transition: background-color 0.3s ease;
+}
+
+.Recipe li {
+    box-shadow: 0 0 0 2px rgb(243, 230, 230);
+    border-radius: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: rgb(243, 230, 230);
+}
+
+.Recipe {
+    margin-bottom: 10px; 
+    padding: 10px;
+    background-color: rgb(243, 230, 230);
+    border-radius: 20px;
+  }
+
+.Buttons {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-top: 10px; 
+}

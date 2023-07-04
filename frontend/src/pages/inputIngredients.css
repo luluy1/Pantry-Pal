@@ -1,0 +1,149 @@
+body{
+    background-color: #D7CEC7;
+}
+.Item-List {
+    height: 400px;
+    overflow-y: scroll; /* Use 'overflow-y' instead of 'overflow' to enable vertical scrollbar */
+    overflow-x: hidden;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgb(243, 230, 230); /* Combine border styles into one shorthand */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Item-List::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+}
+
+.Item-List::-webkit-scrollbar-track {
+    background-color: #f2f2f2; /* Color of the scrollbar track */
+}
+
+.Item-List::-webkit-scrollbar-thumb {
+    background-color: #af4a5d; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Adjust the border radius of the scrollbar thumb */
+}
+
+.Item-List::-webkit-scrollbar-thumb:hover {
+    background-color: #76323F; /* Color of the scrollbar thumb on hover */
+}
+
+.Input-Container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-Ingredient input {
+    border-radius: 10px;
+    border: none;
+    height: 22px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.Add-Ingredient input::placeholder {
+    text-indent: 10px;
+}
+
+.Add-Ingredient button {
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    height: 25px;
+    margin-left: 5px;
+    width: 60px;
+    background-color: #af4a5d;
+    color: #D7CEC7;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Add-Ingredient button:hover{
+    background-color: #76323F;
+    transition: background-color 0.3s ease;
+}
+
+.list-button {
+    background-color: transparent;
+    border: none;
+    color: #af4a5d;
+    font-size: 14px;
+    cursor: pointer;  
+    outline: none !important;
+    box-shadow: none;
+    width: 4px;
+}
+
+.list-button::after{
+    content: "\00D7";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Ingredient {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Ingredient li {
+  box-shadow: 0 0 0 2px rgb(243, 230, 230); /* Add box shadow to specific elements */
+  border-radius: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: rgb(243, 230, 230);
+}
+
+.Redirect {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to control the spacing between buttons */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Redirect a {
+    text-decoration: none !important;
+}
+
+.go-to-recipes,
+.go-to-login {
+    display: flex; /* Add display flex */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    background-color: #af4a5d;
+    color: #d7cec7;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+.go-to-recipes:hover,
+.go-to-login:hover {
+    background-color: #76323f;
+    transition: background-color 0.3s ease;
+}
+
+p {
+    text-indent: 20px;
+}
